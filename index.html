@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #ffc1f3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background-color: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 500px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .card h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ff4081;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff0077;
+    }
+
+    #message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.3em;
+      color: #d63384;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday, My Love! 🎉</h1>
+    <p>Today is all about you and the happiness you bring into my life. Click the button below for a special message ❤️</p>
+    <button class="button" onclick="revealMessage()">Show My Heartfelt Wish</button>
+    <div id="message">You are the sunshine in my life, and I feel grateful every day to have you. May this year bring you endless joy and dreams come true. I love you more than words can say 💖</div>
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
